@@ -1,0 +1,87 @@
+Audit Columns --> Basically Used for auditing purpose
+
+City
+id  name    createdAt   updatedAt   createdBy updatedBy
+1   Pune    10-04-2025  23-04-2025  Sandeep   Shobhit
+
+who created and who updated
+
+Poone --> pune
+
+
+
+BookMyShow 3
+
+Before rest, SOAP was in use and it used to send data in XML format
+
+for ex -> client asked give me info for Student 1
+
+so response will be:
+@Controller
+<Student>
+    <name>Archana Nanaware </name>
+    <ID> 1 </ID>
+    <Roll> 23 </Roll>
+</Student>
+
+In older format
+
+Now in @Rest phase all the response is in JSON format
+
+JSON -> JavaScript Object Notation
+{
+    "name" : Shobhit
+    "id" : 2
+    "roll" : 25
+}
+
+@PathVariable --> we add when We need to look for path
+for ex --> we need to get by id so we will write @PathVariable so we get to know from where id is coming
+@PathVariable("userId") specifies that the userId path variable should be injected into the id method
+parameter.
+
+
+@Requestbody
+in json format
+
+
+Synchronization ->
+DB - Isolation  Levels
+
+Read Uncommitted -> No locking, all open to read .... fastest .... high chances of inconsistency
+Read Commited -> we can only read commited data ... read uncommited > speed > repeatable read.....lesser inconsistency
+Repeatable Read --> new copy of data is used until the entire completes.
+Serializable -> no parallel transaction, transactions on a particular row can only happen sequentially
+
+Serializable --> performance --> worst, consistency --> best.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
